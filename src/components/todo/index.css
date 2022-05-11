@@ -1,0 +1,29 @@
+
+.item-box,.header-box,.footer-box{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+.footer-box:hover{
+  background: #61dafb;
+}
+.item-box:hover{
+  background: #61dafb;
+}
+.footer-box:hover .delBtn{
+  display: block;
+}
+.item-box:hover .delBtn{
+  display: block;
+}
+.delBtn{
+  display: none;
+  background: crimson;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
