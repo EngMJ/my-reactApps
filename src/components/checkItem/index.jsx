@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './index.css';
 
 export default class CheckItem extends Component{
+    static defaultProps = {
+        text: ''
+    }
+
+    static propTypes = {
+        text: PropTypes.string.isRequired,
+    }
+
     render() {
         let { text, checkedHandle, val, id, deleteItem } = this.props
         return (
